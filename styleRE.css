@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(8.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.1rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.1rem;
+    font-size: 1.2rem;
+    font-family: 'Sen', sans-serif;
+    position: relative;
+}
+header nav a {
+    color: #FFF2E7;
+    padding-bottom: 10px;  
+}
+header nav a:hover {
+    border-bottom: 2px solid #ECD6C4;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #FFF2E7;
+    padding: 120px;
+}
+main img {
+    margin-left: 30px;
+    width: 20rem;
+    border-radius: 50%;
+    outline: 1px solid #FFF2E7;
+}
+main #description {
+    max-width: 60%;
+}
+main #description h1 {
+    font-family: 'Sarala', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #ECD6C4;
+}
+main #description p {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.1rem;
+    color: #ECD6C4;
+    line-height: 28px;
+}
+button {
+    margin-top: 1.5rem;
+    width: 10rem;
+    min-width: 5rem;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    background: #af786b;
+    color: #FFF2E7;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    background: #8E5D52;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 140px;
+    border-top: 2px solid #FFF2E7;
+    padding-top: 30px;
+}
+footer img {
+    width: 15rem;
+}
+footer #links {
+    font-size: 1.5rem;
+    font-family: 'Sen', sans-serif;
+}
+footer #links a {
+    color: #ECD6C4;
+    margin-left: 25px;
+}
+footer #links a i {
+    margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1180px) {
+    main {
+        gap: 70px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    main #description {
+        max-width: 75%;
+    }
+    main #description p {
+        font-size: 1.5rem;
+    }
+    footer {
+        margin-top: 10px;
+    }
+}
+
